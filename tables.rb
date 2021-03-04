@@ -25,7 +25,7 @@ describe "automating tables" do
     add_new = driver.find_element(id:'addNewRecordButton')
     add_new.click
 
-    #wait for modal
+    #wait fofr modal
     wait = Selenium::WebDriver::Wait.new(timeout: 10)
     wait.until {driver.find_element(id:'registration-form-modal').displayed?}
 
@@ -40,6 +40,6 @@ describe "automating tables" do
     #submit
     driver.find_element(css:'#submit').click
     end
-
+    ## TODO: Add back navigation and record deletion 
 
   end
